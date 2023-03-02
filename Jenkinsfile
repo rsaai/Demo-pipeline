@@ -5,7 +5,8 @@ pipeline {
    stages {
          stage('install nodejs') {
            steps {
-             sh 'sudo -S apt install nodejs'
+             sh 'sudo su' 
+             sh 'apt install nodejs'
              sh 'node -v'
                  }
              }
