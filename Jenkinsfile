@@ -5,8 +5,8 @@ pipeline {
    stages {
          stage('install nodejs') {
            steps {
-             sh 'sudo apt install nodejs'
-             sh 'sudo apt install npm'
+             sh 'apt install nodejs'
+             #sh 'apt install npm'
                  }
              }
          stage('Install Dependencies') {
