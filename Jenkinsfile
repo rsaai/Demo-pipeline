@@ -6,7 +6,7 @@ pipeline {
    
      stage('Install Dependencies') { 
         steps { 
-           sh 'npm install' 
+           sh 'cd /home/ubuntu/node-js/Demo-pipeline && npm install' 
         }
      }
      
